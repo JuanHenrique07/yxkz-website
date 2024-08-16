@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>yxkz | website </title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="index.css">
+    <script src="main.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <div class="bg">
+        <video muted autoplay loop> <source src="0810.mp4" type="video/mp4"></video>
+        <header>
+            <div class="logo">
+                <a href="index.html" data-aos="fade-right"
+                data-aos-duration="1500" ><img src="img/LOGO.png" alt="Logo"></a>
+            </div>
+            <div class="menu" data-aos="fade-down"
+            data-aos-duration="1500">
+                <nav id="nav">
+                    <a href="index.html" class="activep">home</a>
+                    <a href="thumbnail.html">thumbnails</a>
+                    <a href="websites.html">websites</a>
+                    <a href="about-me.html">about me</a>
+                </nav>
+            </div>
+            <div class="socials" data-aos="fade-left"
+            data-aos-duration="1500">
+                <a href="#"><i class='bx bxl-instagram' ></i></a>
+                <a href="#"><i class='bx bxl-twitter' ></i></a>
+                <a href="#"><i class='bx bxl-youtube' ></i></a>
+            </div>
+            <span class="material-symbols-outlined close-menu" onclick="closeMenu()">
+                close
+                </span>
+        </header>
+        <div class="menu-mobile">
+            <div class="mobile-logo">
+                <a href="index.html"><img src="img/LOGO.png" alt="Logo" class="logomobile"></a>
+            </div>
+            <i onclick="menuOpen()" class='bx bx-menu'></i>
+        </div>
+        <section class="slog" data-aos="fade-right" data-aos-duration="1000">
+            <h2>
+                I have the
+            </h2>
+            <span class="write"></span>
+        </section>
+    </div>
+    <main>
+        <div class="bg-main">
+        </div>
+        <div class="menu-main">
+            <a class="menub1 active" onclick="thumb()" data-aos="zoom-in" data-aos-offset="10">THUMBS</a>
+            <img src="img/logo.jpg" alt="logo" data-aos="zoom-in" data-aos-offset="10">
+            <a class="menub2" onclick="site()" data-aos="zoom-in" data-aos-offset="10">WEBSITES</a>
+        </div>
+    <hr>
+        <div class="items-thumbs">
+            <div class="product" id="check" data-name="PHOTOGRAPHY THUMBNAIL" data-image="img/thumb types/photography tips.png" data-aos="zoom-in" data-aos-duration="700">
+                <img src="img/thumb types/photography tips.png">
+            </div>
+            <div class="product" id="check" data-name="MINECRAFT THUMBNAIL" data-image="img/thumbs/MINETHUMB1.jpg.png" data-aos="zoom-in" data-aos-duration="700">
+                <img src="img/thumbs/MINETHUMB1.jpg.png">
+            </div>
+            <div class="product" id="check" data-name="VALORANT THUMBNAIL" data-image="img/thumbs/MONEY.png" data-aos="zoom-in" data-aos-duration="700">
+                <img src="img/thumbs/MONEY.png">
+            </div>
+            <div class="product" id="check" data-name="VALORANT THUMBNAIL" data-image="img/thumbs/unjustified.png" data-aos="zoom-in" data-aos-duration="700">
+                <img src="img/thumbs/unjustified.png">
+            </div>
+            <div class="product" id="check" data-name="COMMOM THUMBNAIL" data-image="img/thumbs/Minitaruo.jpg.png" data-aos="zoom-in" data-aos-duration="700">
+                <img src="img/thumbs/Minitaruo.jpg.png">
+            </div>
+            <div class="product" id="check" data-name="FORTNITE THUMBNAIL" data-image="img/thumbs/Thumb Fortnite.png" data-aos="zoom-in" data-aos-duration="700">
+                <img src="img/thumbs/Thumb Fortnite.png">
+            </div>
+            <div class="product" id="check" data-name="VALORANT THUMBNAIL" data-image="img/thumbs/thumb2.png" data-aos="zoom-in" data-aos-duration="700">
+                <img src="img/thumbs/thumb2.png">
+            </div>
+            <div class="product" id="check" data-name="GAME THUMBNAIL" data-image="img/thumbs/FIVERR THUMB 23.jpg.png" data-aos="zoom-in" data-aos-duration="700">
+                <img src="img/thumbs/FIVERR THUMB 23.jpg.png">
+            </div>
+            <div class="product" id="check" data-name="COMMOM THUMBNAIL" data-image="img/thumbs/thumb yoru.png" data-aos="zoom-in" data-aos-duration="700">
+                <img src="img/thumbs/thumb yoru.png">
+            </div>
+        </div>
+        <div class="items-sites unactive">
+            <div class="product web" id="check" data-name="PERSONAL PROJECT" data-image="img/sites/food.png" data-aos="zoom-in" data-aos-duration="700" data-link="https://project-food-3ul7ccwpu-juanhenrique07.vercel.app">
+                <img src="img/sites/food.png">
+            </div>
+            <div class="product web" id="check" data-name="PERSONAL PROJECT" data-image="img/sites/barber.png" data-aos="zoom-in" data-aos-duration="700" data-aos-delay="300" data-link="https://project-barberdev.vercel.app">
+                <img src="img/sites/barber.png">
+            </div>
+            <div class="product web" id="check" data-name="PERSONAL PROJECT" data-image="img/sites/porsche.png" data-aos="zoom-in" data-aos-duration="700" data-link="https://juanhenrique07.github.io/porsche/">
+                <img src="img/sites/porsche.png">
+            </div>
+            <div class="product web" id="check" data-name="PERSONAL PROJECT" data-image="img/sites/form.png" data-aos="zoom-in" data-aos-duration="700" data-aos-delay="300" data-link="https://project-form-gamma.vercel.app">
+                <img src="img/sites/form.png">
+            </div>
+            <div class="product web" id="check" data-name="PERSONAL PROJECT" data-image="img/sites/valo.png" data-aos="zoom-in" data-aos-duration="700" data-aos-delay="300" data-link="https://project-valorant.vercel.app">
+                <img src="img/sites/valo.png">
+            </div>
+            <div class="product web" id="check" data-name="PERSONAL PROJECT" data-image="img/sites/poke.png" data-aos="zoom-in" data-aos-duration="700" data-aos-delay="300" data-link="https://project-pokedex-sigma.vercel.app">
+                <img src="img/sites/poke.png">
+            </div>
+        </div>
+        <div id="product-popup" class="popup">
+            <div class="popup-content">
+                <span class="close">&times;</span>
+                <img id="popup-image" src="" alt="Img">
+                <div class="desc">
+                    <h2 id="popup-title"></h2>
+                    <button class="fullsite"><a href="#" class="seefullwebsite" target="_blank">SEE FULL WEBSITE</a></button>
+                    <button class="contactme"><a href="#">CONTACT ME</a></button>
+                </div>
+
+            </div>
+        </div>
+<footer>
+        <div class="footer-container">
+            <div class="contact">
+                <h1>
+                    DO YOU WANT TO CONTACT ME?
+                </h1>
+                <button>CONTACT</button>
+            </div>
+        </div>
+            <div class="socials-footer">
+                <a href="#"><i class='bx bxl-instagram' ></i></a>
+                <a href="#"><i class='bx bxl-twitter' ></i></a>
+                <a href="#"><i class='bx bxl-youtube' ></i></a>
+            </div>
+            <p>© 2024-2024 Yxkz™. All rights reserved.</p>
+</footer>
+    </main>
+<div class="fixedbtn" data-aos="fade-up" data-aos-offset="5">
+    <a href="#"><i class='bx bxs-chat'></i></a>
+</div>
+</body>
+</html>
