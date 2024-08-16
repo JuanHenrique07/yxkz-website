@@ -494,7 +494,7 @@ footer p{
     
     .adv{
         text-align: center;
-        margin: 2rem 6.5rem;
+        margin: 2rem 3rem;
         padding: 1rem;
         border-radius: 0px;
         font-size: 14px;
@@ -514,9 +514,14 @@ footer p{
     }
     .socials-footer a{
         border-radius: 15px;
+        margin-bottom: 5rem;
     }
     .socials-footer a i{
         font-size: 20px;
+    }
+    footer p{
+        width: 100%;
+        text-align: center;
     }
     .contact button{
         padding: 1rem 3rem;
