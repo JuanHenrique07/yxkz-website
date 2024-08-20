@@ -24,16 +24,16 @@ var options = {
 function site(){
   thumbs.classList.add("unactive")
   sites.classList.remove("unactive")
-  menub2.classList.remove("active")
   menub1.classList.add("active")
+  menub2.classList.remove("active")
 }
 
 
 function thumb(){
   thumbs.classList.remove("unactive")
   sites.classList.add("unactive")
-  menub2.classList.add("active")
   menub1.classList.remove("active")
+  menub2.classList.add("active")
 }
 
 
