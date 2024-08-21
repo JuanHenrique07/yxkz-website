@@ -235,7 +235,7 @@ main hr{
 
 .product img {
     width: 100%; 
-    height: 750px;
+    max-height: 750px;
     border-bottom-left-radius: 15px;
     transform: scale(1);
     transition: transform 1s ease-in-out;
@@ -399,6 +399,7 @@ footer p{
     gap: 4rem;
     text-align: center;
     animation: fadeIn 1s forwards;
+    position: relative;
 }
 
 #popup-image {
@@ -412,6 +413,27 @@ footer p{
 .popup-content h2{
     padding-top: 1rem;
     font-family: myFont;
+    font-size: 48px;
+}
+
+.desc{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.responsive{
+    display: flex;
+    gap: 4rem;
+    padding-top: 2rem;
+}
+
+.mob, .pc{
+    display: none;
+}
+
+.responsive i{
     font-size: 48px;
 }
 
@@ -584,7 +606,7 @@ footer p{
         grid-template-columns: repeat(1, 1fr);
     }
     .product img{
-        width: 300px;
+        width: 310px;
         height: auto;
     }
     .product{
