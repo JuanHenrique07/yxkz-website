@@ -14,7 +14,6 @@ var options = {
 
 
 
-  const unactive = document.querySelector(".unactive")
   const thumbs = document.querySelector(".items-thumbs")
   const sites = document.querySelector(".items-sites")
   const menub1 = document.querySelector(".menub1")
@@ -22,16 +21,16 @@ var options = {
 
 
 function site(){
-  thumbs.classList.add("unactive")
-  sites.classList.remove("unactive")
+  thumbs.style.display="none"
+  sites.style.display="grid"
   menub1.classList.add("active")
   menub2.classList.remove("active")
 }
 
 
 function thumb(){
-  thumbs.classList.remove("unactive")
-  sites.classList.add("unactive")
+  thumbs.style.display="grid";
+  sites.style.display="none";
   menub1.classList.remove("active")
   menub2.classList.add("active")
 }
