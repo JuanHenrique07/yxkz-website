@@ -19,7 +19,6 @@ var options = {
   const menub1 = document.querySelector(".menub1")
   const menub2 = document.querySelector(".menub2")
 
-
 function site(){
   thumbs.style.display="none"
   sites.style.display="grid"
@@ -47,6 +46,8 @@ const popupTitle = document.getElementById('popup-title');
 const closeBtn = document.querySelector('.close');
 const button = document.querySelector(".fullsite")
 const linkbtn = document.querySelector(".seefullwebsite")
+const mob = document.querySelector(".mob")
+const pc = document.querySelector(".pc")
 
 products.forEach(product => {
     const name = product.getAttribute('data-name');
@@ -56,7 +57,6 @@ products.forEach(product => {
       if (product.classList.contains("web")) {
         popupTitle.textContent = name;
         popupImage.src = image;
-        
         if (window.innerWidth < 768) {
             // Si la largura de la ventana es menor que 768px
             popupImage.style.height= "400px";
@@ -66,13 +66,22 @@ products.forEach(product => {
             popupImage.style.height= "750px";
             popupImage.style.width= "450px";
         }
-        
         linkbtn.href = link;
         popup.style.display = 'block';
         button.style.display = "flex";
-      } else {
+
+        if(product.classList.contains("resp")){
+          mob.style.display="flex";
+          pc.style.display="flex";
+        } else {
+          pc.style.display="flex";
+          mob.style.display="none";
+        }
+      }else {
         popupTitle.textContent = name;
         popupImage.src = image;
+        pc.style.display="none";
+        mob.style.display="none";
         
         if (window.innerWidth < 768) {
             // Si la largura de la ventana es menor que 768px
