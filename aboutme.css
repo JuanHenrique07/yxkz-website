@@ -292,7 +292,7 @@ footer p{
         flex-direction: column;
     }
     .abt-me{
-        padding: 3rem 4rem;
+        padding: 3rem 2rem;
         text-align: center;
     }
     nav a{
@@ -310,6 +310,7 @@ footer p{
     }
     .socials-footer a{
         border-radius: 15px;
+        margin-bottom: 5rem;
     }
     .socials-footer a i{
         font-size: 20px;
@@ -319,6 +320,10 @@ footer p{
         font-weight: 400;
         font-family: myFont, sans-serif;
         font-size: 20px;
+    }
+    footer p{
+        width: 100%;
+        text-align: center;
     }
     .bx-menu{
         font-size: 42px;
